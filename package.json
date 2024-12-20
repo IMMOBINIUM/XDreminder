@@ -1,0 +1,81 @@
+{
+  "name": "xdreminder",
+  "displayName": "XDreminder",
+  "description": "Remind you of anything you want",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "xdreminder.openSettings",
+        "title": "Open Reminder Settings"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "XDreminder Settings",
+      "properties": {
+        "xdreminder.reminders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "interval": {
+                "type": "number",
+                "default": 5,
+                "description": "Interval for the reminder (in seconds)."
+              },
+              "unit": {
+                "type": "string",
+                "enum": ["seconds", "minutes", "hours"],
+                "default": "minutes",
+                "description": "Time unit for the interval."
+              },
+              "message": {
+                "type": "string",
+                "default": "This is your reminder!",
+                "description": "The message to remind you periodically."
+              }
+            }
+          },
+          "default": [
+            {
+              "interval": 5,
+              "unit": "minutes",
+              "message": "Default Reminder"
+            }
+          ],
+          "description": "List of reminders with customizable intervals and messages."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
