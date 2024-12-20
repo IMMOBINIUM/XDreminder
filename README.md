@@ -18,6 +18,9 @@ XDreminder is a productivity-enhancing Visual Studio Code extension that helps y
 
 XDreminder is a VS Code extension that allows you to set reminders, get notified about upcoming tasks, and manage your reminders within the VS Code interface. It is built to improve task management, help you stay organized, and boost productivity while you code.
 
+![{B3A46E76-BA46-432C-8765-34C3BC4029FA}](https://github.com/user-attachments/assets/c284d69b-d5d1-4fbe-83f2-c17b910d8e3c)
+
+
 ## Features
 
 - **Set Reminders:** Easily set reminders with specific messages and time stamps.
