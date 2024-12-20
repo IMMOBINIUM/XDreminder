@@ -40,7 +40,7 @@ To install XDreminder, follow the steps below:
 ### How to Install
 
 1. Open **Visual Studio Code**.
-2. Download latest realeas of extention from Here
+2. Download latest realeas of extention from [Here](https://github.com/IMMOBINIUM/XDreminder/releases)
 3. Navigate to the **Extensions Marketplace** (click on the Extensions icon in the Activity Bar on the side of the VS Code window).
 4. Click on More Actions (3 dots top right of the page)
 5. Click **Install from VSIX...** and choose downloaded .vsix file from your PC/Laptop
