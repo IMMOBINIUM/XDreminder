@@ -11,6 +11,7 @@ XDreminder is a productivity-enhancing Visual Studio Code extension that helps y
   - [How to Install](#how-to-install)
   - [Using](#using)
 - [Usage](#usage)
+  - [How to Export](#how-to-export)
   - [How to clone](#how-to-clone)
 - [License](#license)
 
@@ -52,7 +53,7 @@ To install XDreminder, follow the steps below:
 
 For use XDreminder, follow the steps below:
 
-#### How to Use on Windows
+#### How to Use on Windows & linux
 
 1. **Install the Extension**:
 
@@ -110,6 +111,12 @@ Open Terminal in the project folder and enter this command :
 vsce package --out ./dist/
 ```
 
+if project don't have error, the exported file will be saved in dist Folder!
+
+
+> Notice : Make sure you have dist folder in project directory! (if dist folderdoes not exist create it)
+
+
 ## How to Clone
 
 For clone the project you need to use this command in terminal or CMD:
@@ -120,7 +127,6 @@ git clone https://github.com/IMMOBINIUM/XDreminder.git
 
 if project don't have error, the exported file will save in dist Folder!
 
-> Notice : Make sure you have dist folder in project directory! (if dist folderdoes not exist create it)
 
 ## License
 
